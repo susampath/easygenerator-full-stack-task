@@ -1,0 +1,16 @@
+export const ResponseMessages = Object.freeze({
+    SUCCESS: "Success",
+    USER_LOGIN_SUCCESS: "User logged in successfully",
+    PASSWORD_VALIDATION_LENGTH: "Password must be at least 8 characters",
+    PASSWORD_VALIDATION_MATCH: "Password must contain at least 1 lowercase letter, 1 number, and 1 special character",
+    USER_REGISTER_SUCCESS: "User registered successfully",
+    USER_CREATED_SUCCESS: "User created successfully",
+    EMAIL_EXITS: "Duplicated email address",
+    DATA_FOUND: "Data found",
+    DATA_NOT_FOUND: "Data not found",
+    UNAUTHORIZED: "Unauthorized",
+    INTERNAL_SERVER_ERROR: "Internal server error",
+    UNPROCESSABLE_CONTENT: "Unprocessable Content",
+    USER_NOT_FOUND: "User doesn't exists",
+    INVALID_CREDENTIALS: "invalid credential",
+});

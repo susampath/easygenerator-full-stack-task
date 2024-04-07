@@ -1,0 +1,47 @@
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  text-align: left;
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.section {
+  border: 5px solid #f0f0f1;
+  margin: 100px auto 20px;
+  width: 450px;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+  background: honeydew;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 35px;
+  margin-top: 15px;
+}
+
+.basicLabel {
+  margin-top: 5px;
+  color: black;
+  font-size: 18px;
+}
+
+.inputField {
+  display: block; /* Force input to occupy full width and start on new line */
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  font-size: 1rem;
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.submitButton {
+  width: 300px;
+  margin-top: 15px;
+}

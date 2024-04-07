@@ -1,0 +1,29 @@
+.home-wrapper {
+  width: 100%;
+  max-width: 500px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.paragraphWrapper {
+  text-align: center;
+  color: black;
+  margin-bottom: 35px;
+  margin-top: 15px;
+}
+
+.buttonWrapper {
+  margin-top: 20px;
+  align-items: center;
+  margin-right: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 35px;
+  margin-top: 15px;
+}

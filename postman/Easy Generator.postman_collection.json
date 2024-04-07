@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "93a7e2c2-2420-4066-83bc-55fe99cc6c6d",
+		"name": "Easy Generator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8701522"
+	},
+	"item": [
+		{
+			"name": "Health check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/common/health-check",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"common",
+						"health-check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user email",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/auth/user-details",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"auth",
+						"user-details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"susampathmm95@gmail.com\",\n    \"name\": \"Susampath Madarasinghe\",\n    \"password\": \"1234567asd!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/v1/auth/register",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v1",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\": \"1234567asd!\",\n    \"email\": \"susampathmm95@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/auth/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

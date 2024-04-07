@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.instructions > svg {
+  margin-right: 0.25rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.error {
+  color: firebrick;
+  font-weight: bold;
+}
+
+.line {
+  display: inline-block;
+  text-align: right;
+  padding-left: 5px;
+}
+
+p {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.persistCheck {
+  font-size: 0.75rem;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.persistCheck label {
+  margin: 0;
+}
+
+.loading-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.toast-container {
+  .toast {
+    padding: 10px;
+
+    .toast-header {
+      border: none;
+      background: none;
+
+      .icon {
+        margin-right: 15px;
+        font-size: 17px;
+        color: var(--text-color);
+      }
+
+      p {
+        color: var(--text-color);
+      }
+
+      .action {
+        margin-left: 15px;
+        color: var(--action-color);
+        cursor: pointer;
+      }
+    }
+  }
+
+  &.top-0 {
+    margin-top: 20px;
+  }
+}

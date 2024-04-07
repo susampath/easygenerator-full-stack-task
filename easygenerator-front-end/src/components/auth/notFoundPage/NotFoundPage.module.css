@@ -1,0 +1,16 @@
+.section {
+  border: 5px solid #f0f0f1;
+  margin: 100px auto 20px;
+  width: 450px;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+  background: honeydew;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.error {
+  color: firebrick;
+  font-weight: bold;
+}
