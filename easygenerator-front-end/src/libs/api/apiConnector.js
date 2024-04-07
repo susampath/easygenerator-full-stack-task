@@ -56,7 +56,17 @@ const errorHandler = (error) => {
           message: error.response.data.data.message,
         })
       );
-    } else {
+    }
+    else if (
+        error.response?.status === ResponseCodes.ERROR.EMAIL_EXITS.CODE
+    ) {
+      store.dispatch(
+          commonActions.showErrorAlert({
+            message: error.response.data.message,
+          })
+      );
+    }
+    else {
       console.log("Other error");
       store.dispatch(commonActions.showErrorAlert({ message: "Other error" }));
     }
