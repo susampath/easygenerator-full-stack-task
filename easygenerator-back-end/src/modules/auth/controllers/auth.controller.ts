@@ -1,6 +1,6 @@
 import {Body, Controller, Get, Post, Req, Res, UseGuards} from "@nestjs/common";
 import {Response, Request} from "express";
-import {ApiResponse} from "@nestjs/swagger";
+import {ApiBearerAuth, ApiResponse, ApiTags} from "@nestjs/swagger";
 
 import {MainService} from "../../../utils/responseHandler/main.service";
 import {AuthService} from "../services/auth.service";
@@ -14,6 +14,8 @@ import {JwtAuthGuard} from "../guards/jwt-auth.guard";
 import {WinstonService} from "../../../utils/logger/winston/winston.service";
 
 
+@ApiTags("Auth Module")
+@ApiBearerAuth("access-token")
 @Controller("auth")
 export class AuthController {
 

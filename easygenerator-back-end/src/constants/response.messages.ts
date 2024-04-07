@@ -2,7 +2,7 @@ export const ResponseMessages = Object.freeze({
     SUCCESS: "Success",
     USER_LOGIN_SUCCESS: "User logged in successfully",
     PASSWORD_VALIDATION_LENGTH: "Password must be at least 8 characters",
-    PASSWORD_VALIDATION_MATCH: "Password must contain at least 1 lowercase letter, 1 number, and 1 special character",
+    PASSWORD_VALIDATION_MATCH: "Password must contain at least one letter, one number, and one special character",
     USER_REGISTER_SUCCESS: "User registered successfully",
     USER_CREATED_SUCCESS: "User created successfully",
     EMAIL_EXITS: "Duplicated email address",

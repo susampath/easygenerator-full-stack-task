@@ -67,12 +67,11 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/v1/auth/register",
+					"raw": "{{url}}/auth/register",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
-						"v1",
 						"auth",
 						"register"
 					]
