@@ -46,7 +46,7 @@ export default Object.freeze({
       MSG: "Invalid credentials",
     },
     EMAIL_EXITS: {
-      CODE: 601,
+      CODE: 602,
       MSG: "Email exists",
     },
     VALIDATION_ERROR: {
