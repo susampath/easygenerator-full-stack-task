@@ -125,6 +125,6 @@ Please note that use NodeJS version v18.19.0 for this frontend app to compatibil
 
 A sample MongoDB collection has been uploaded to the mongodb-backup folder.
 
-### ===========================Postman===================================
+### ===========================Postman================================
 
 A postman collection has been uploaded to the postman folder.This include environment and apis.
